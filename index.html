@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <!-- -------------------------navigation bar-------------------------- -->
+            <nav>
+                <a href="#"><img src="images/logo.png" class="logo"></a>
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <ul class="navigation">
+                    <li><a href="https://www.starbucks.in/dashboard">Home</a></li>
+                    <li><a href="https://www.starbucks.in/ordering">Menu</a></li>
+                    <li><a href="https://www.starbucks.in/about-us">About</a></li>
+                    <li><a href="https://www.starbucks.in/profile/help-center">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ------------------------------home page content------------------------------ -->
+        <div class="container">
+            <div class="box">
+                <h2>Beyond Coffee, Beyond Ordinary<br>It's <span>Starbucks</span></h2>
+                <p>At Starbucks, every visit is a journey of indulgence. From expertly crafted coffee to the inviting atmosphere, it's a place where quality and comfort meet. Whether you're savoring a classic brew or trying a seasonal favorite, each cup is a moment of pure delight. Discover the exceptional, one sip at a time. Welcome to Starbucks.</p>
+                <a href="https://starbucks.in/dashboard">Learn More</a>
+            </div>
+            <!-- -----------------------image on homepage---------------------- -->
+            <div class="box-img">
+                <img src="images/img1.png" class="coffee1">
+            </div>
+        </div>
+        <!-- -------------------------image pop up on click------------------ -->
+        <ul class="choice">
+            <li><img src="images/thumb2.png" onclick="imageslider('images/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="images/thumb3.png" onclick="imageslider('images/img3.png');changeCircleColor('#d752b1')"></li>
+            <li><img src="images/thumb1.png" onclick="imageslider('images/img1.png');changeCircleColor('#017143')"></li>
+        </ul>
+        <!-- --------------------social links--------------------------- -->
+        <ul class="social">
+            <li><a href="https://www.instagram.com/starbucksindia/"><img src="images/instagram.png"></a></li>
+            <li><a href="https://www.facebook.com/starbucksindia"><img src="images/facebook.png"></a></li>
+            <li><a href="https://x.com/starbucksindia"><img src="images/twitter.png"></a></li> 
+        </ul>
+    </section>
+    <fotter>
+        <div class="copyright">
+            <p>copyright &copy made by Bijoy </p>
+        </div>
+    </fotter>
+</body>
+</html>
